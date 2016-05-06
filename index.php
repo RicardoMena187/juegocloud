@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Juego de correspondencias</title>
+	<title>Juego de correspondencias Ricardo Mena</title>
 	<style>
 		img{
 			position:absolute;
