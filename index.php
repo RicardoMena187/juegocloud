@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Juego de correspondencias Ricardo Mena</title>
+	<title>Juego de correspondencias Ricardo & David</title>
 	<style>
 		img{
 			position:absolute;
@@ -23,6 +23,7 @@
 <body onLoad="generateFaces()">
 	<h2>Juego de correspondencias</h2>
     <p>Haga clic en la cara sonriente extra en la parte izquierda de la pantalla</p>
+    <p>Autores: Ricardo & David</p>
 	<div id="leftSide"></div>
 	<div id="rightSide"></div>
     <script>
