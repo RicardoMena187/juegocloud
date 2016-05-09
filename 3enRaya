@@ -1,0 +1,349 @@
+<html>
+<head>
+<title>3 en Raya</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.titular {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: normal}
+.puntuacion {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: normal}
+.inputtex { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: normal }
+-->
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var x = "x-3raya.jpg";
+// Location of where you uploaded your site's x.jpg image
+
+var o = "o-3raya.jpg";
+// Location of where you uploaded your site's o.jpg image
+
+var blank = "blanco-3raya.jpg";
+// Location of where you uploaded your site's blank.jpg image
+
+var pause = 0;
+var all = 0;
+var a = 0;
+var b = 0;
+var c = 0;
+var d = 0;
+var e = 0;
+var f = 0;
+var g = 0;
+var h = 0;
+var i = 0;
+var temp="";
+var ok = 0;
+var cf = 0;
+var choice=9;
+var aRandomNumber = 0;
+var comp = 0; 
+var t = 0;
+var wn = 0;
+var ls = 0;
+var ts = 0;
+function logicOne() {
+if ((a==1)&&(b==1)&&(c==1)) all=1;
+if ((a==1)&&(d==1)&&(g==1)) all=1;
+if ((a==1)&&(e==1)&&(i==1)) all=1;
+if ((b==1)&&(e==1)&&(h==1)) all=1;
+if ((d==1)&&(e==1)&&(f==1)) all=1;
+if ((g==1)&&(h==1)&&(i==1)) all=1;
+if ((c==1)&&(f==1)&&(i==1)) all=1;
+if ((g==1)&&(e==1)&&(c==1)) all=1;
+if ((a==2)&&(b==2)&&(c==2)) all=2;
+if ((a==2)&&(d==2)&&(g==2)) all=2;
+if ((a==2)&&(e==2)&&(i==2)) all=2;
+if ((b==2)&&(e==2)&&(h==2)) all=2;
+if ((d==2)&&(e==2)&&(f==2)) all=2;
+if ((g==2)&&(h==2)&&(i==2)) all=2;
+if ((c==2)&&(f==2)&&(i==2)) all=2;
+if ((g==2)&&(e==2)&&(c==2)) all=2;
+if ((a != 0)&&(b != 0)&&(c != 0)&&(d != 0)&&(e != 0)&&(f != 0)&&(g != 0)&&(h != 0)&&(i != 0)&&(all == 0)) all = 3;
+} 
+function logicTwo() {
+if ((a==2)&&(b==2)&&(c== 0)&&(temp=="")) temp="C";
+if ((a==2)&&(b== 0)&&(c==2)&&(temp=="")) temp="B";
+if ((a== 0)&&(b==2)&&(c==2)&&(temp=="")) temp="A";
+if ((a==2)&&(d==2)&&(g== 0)&&(temp=="")) temp="G";
+if ((a==2)&&(d== 0)&&(g==2)&&(temp=="")) temp="D";
+if ((a== 0)&&(d==2)&&(g==2)&&(temp=="")) temp="A";
+if ((a==2)&&(e==2)&&(i== 0)&&(temp=="")) temp="I";
+if ((a==2)&&(e== 0)&&(i==2)&&(temp=="")) temp="E";
+if ((a== 0)&&(e==2)&&(i==2)&&(temp=="")) temp="A";
+if ((b==2)&&(e==2)&&(h== 0)&&(temp=="")) temp="H";
+if ((b==2)&&(e== 0)&&(h==2)&&(temp=="")) temp="E";
+if ((b== 0)&&(e==2)&&(h==2)&&(temp=="")) temp="B";
+if ((d==2)&&(e==2)&&(f== 0)&&(temp=="")) temp="F";
+if ((d==2)&&(e== 0)&&(f==2)&&(temp=="")) temp="E";
+if ((d== 0)&&(e==2)&&(f==2)&&(temp=="")) temp="D";
+if ((g==2)&&(h==2)&&(i== 0)&&(temp=="")) temp="I";
+if ((g==2)&&(h== 0)&&(i==2)&&(temp=="")) temp="H";
+if ((g== 0)&&(h==2)&&(i==2)&&(temp=="")) temp="G";
+if ((c==2)&&(f==2)&&(i== 0)&&(temp=="")) temp="I";
+if ((c==2)&&(f== 0)&&(i==2)&&(temp=="")) temp="F";
+if ((c== 0)&&(f==2)&&(i==2)&&(temp=="")) temp="C";
+if ((g==2)&&(e==2)&&(c== 0)&&(temp=="")) temp="C";
+if ((g==2)&&(e== 0)&&(c==2)&&(temp=="")) temp="E";
+if ((g== 0)&&(e==2)&&(c==2)&&(temp=="")) temp="G";
+}
+function logicThree() {
+if ((a==1)&&(b==1)&&(c==0)&&(temp=="")) temp="C";
+if ((a==1)&&(b==0)&&(c==1)&&(temp=="")) temp="B";
+if ((a==0)&&(b==1)&&(c==1)&&(temp=="")) temp="A";
+if ((a==1)&&(d==1)&&(g==0)&&(temp=="")) temp="G";
+if ((a==1)&&(d==0)&&(g==1)&&(temp=="")) temp="D";
+if ((a==0)&&(d==1)&&(g==1)&&(temp=="")) temp="A";
+if ((a==1)&&(e==1)&&(i==0)&&(temp=="")) temp="I";
+if ((a==1)&&(e==0)&&(i==1)&&(temp=="")) temp="E";
+if ((a==0)&&(e==1)&&(i==1)&&(temp=="")) temp="A";
+if ((b==1)&&(e==1)&&(h==0)&&(temp=="")) temp="H";
+if ((b==1)&&(e==0)&&(h==1)&&(temp=="")) temp="E";
+if ((b==0)&&(e==1)&&(h==1)&&(temp=="")) temp="B";
+if ((d==1)&&(e==1)&&(f==0)&&(temp=="")) temp="F";
+if ((d==1)&&(e==0)&&(f==1)&&(temp=="")) temp="E";
+if ((d==0)&&(e==1)&&(f==1)&&(temp=="")) temp="D";
+if ((g==1)&&(h==1)&&(i==0)&&(temp=="")) temp="I";
+if ((g==1)&&(h==0)&&(i==1)&&(temp=="")) temp="H";
+if ((g==0)&&(h==1)&&(i==1)&&(temp=="")) temp="G";
+if ((c==1)&&(f==1)&&(i==0)&&(temp=="")) temp="I";
+if ((c==1)&&(f==0)&&(i==1)&&(temp=="")) temp="F";
+if ((c==0)&&(f==1)&&(i==1)&&(temp=="")) temp="C";
+if ((g==1)&&(e==1)&&(c==0)&&(temp=="")) temp="C";
+if ((g==1)&&(e==0)&&(c==1)&&(temp=="")) temp="E";
+if ((g==0)&&(e==1)&&(c==1)&&(temp=="")) temp="G";
+}
+function clearOut() {
+document.game.you.value="0";
+document.game.computer.value="0";
+document.game.ties.value="0";
+}
+function checkSpace() {
+if ((temp=="A")&&(a==0)) {
+ok=1;
+if (cf==0) a=1;
+if (cf==1) a=2;
+}
+if ((temp=="B")&&(b==0)) {
+ok=1;
+if (cf==0) b=1;
+if (cf==1) b=2;
+}
+if ((temp=="C")&&(c==0)) {
+ok=1;
+if (cf==0) c=1;
+if (cf==1) c=2;
+}
+if ((temp=="D")&&(d==0)) {
+ok=1;
+if (cf==0) d=1;
+if (cf==1) d=2;
+}
+if ((temp=="E")&&(e==0)) {
+ok=1;
+if (cf==0) e=1;
+if (cf==1) e=2;
+}
+if ((temp=="F")&&(f==0)) {
+ok=1
+if (cf==0) f=1;
+if (cf==1) f=2;
+}
+if ((temp=="G")&&(g==0)) {
+ok=1
+if (cf==0) g=1;
+if (cf==1) g=2;
+}
+if ((temp=="H")&&(h==0)) {
+ok=1;
+if (cf==0) h=1;
+if (cf==1) h=2;
+}
+if ((temp=="I")&&(i==0)) {
+ok=1;
+if (cf==0) i=1; 
+if (cf==1) i=2; 
+}
+}
+function yourChoice(chName) {
+pause = 0;
+if (all!=0) ended();
+if (all==0) {
+cf = 0;
+ok = 0;
+temp=chName;
+checkSpace();
+if (ok==1) {
+document.images[chName].src = x;
+}
+if (ok==0)taken();
+process();
+if ((all==0)&&(pause==0)) myChoice();
+   }
+}
+function taken() {
+alert("La casilla está ocupada, eliga otra casilla")
+pause=1;
+}
+function myChoice() {
+temp="";
+ok = 0;
+cf=1;
+logicTwo();
+logicThree();
+checkSpace();
+while(ok==0) {
+aRandomNumber=Math.random()
+comp=Math.round((choice-1)*aRandomNumber)+1;
+if (comp==1) temp="A";
+if (comp==2) temp="B";
+if (comp==3) temp="C";
+if (comp==4) temp="D";
+if (comp==5) temp="E";
+if (comp==6) temp="F";
+if (comp==7) temp="G";
+if (comp==8) temp="H";
+if (comp==9) temp="I";
+checkSpace();
+}
+document.images[temp].src= o;
+process();
+}
+function ended() {
+alert("El juego ha sido finalizado. Para Jugar de nuevo realiza un clic en el botón jugar.")
+}
+function process() {
+logicOne();
+if (all==1){ alert("Felicidades me has ganado!"); wn++; }
+if (all==2){ alert("Bien! Yo he ganado!"); ls++; }
+if (all==3){ alert("Empate."); ts++; }
+if (all!=0) {
+document.game.you.value = wn;
+document.game.computer.value = ls;
+document.game.ties.value = ts;
+   }
+}
+function playAgain() {
+if (all==0) {
+if(confirm("El Juego empezará de Nuevo y limpiaremos todos los resultados. Ok?")) reset();
+}
+if (all>0) reset();
+}
+function reset() {
+all = 0;
+a = 0;
+b = 0;
+c = 0;
+d = 0;
+e = 0;
+f = 0;
+g = 0;
+h = 0;
+i = 0;
+temp="";
+ok = 0;
+cf = 0;
+choice=9;
+aRandomNumber = 0;
+comp = 0; 
+document.images.A.src= blank;
+document.images.B.src= blank;
+document.images.C.src= blank;
+document.images.D.src= blank;
+document.images.E.src= blank;
+document.images.F.src= blank;
+document.images.G.src= blank;
+document.images.H.src= blank;
+document.images.I.src= blank;
+if (t==0) { t=2; myChoice(); }
+t--;
+}
+//  End -->
+</script>
+</head>
+
+<body bgcolor="#CCCCCC" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<form name=game><table width="576" border="0" cellspacing="0" cellpadding="0" height="310">
+  <tr> 
+    <td width="11">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td> 
+      <table border="0" bgcolor="#000000">
+        <tr bgcolor="#FFFFFF"> 
+          <td width="95" height="95"><a href="javascript:yourChoice('A')"><img src="blanco-3raya.jpg" border=0 width="95" height="95" name=A alt="Top-Left"></a></td>
+          <td width="95"><a href="javascript:yourChoice('B')"><img src="blanco-3raya.jpg" width="95" border=0 height="95" name=B alt="Top-Center"></a></td>
+          <td width="95"><a href="javascript:yourChoice('C')"><img src="blanco-3raya.jpg" width="95"  border=0 height="95" name=C alt="Top-Right"></a></td>
+        </tr>
+        <tr bgcolor="#FFFFFF"> 
+          <td width="95" height="95"><a href="javascript:yourChoice('D')"><img src="blanco-3raya.jpg" border=0 width="95" height="95" name=D alt="Middle-Left"></a></td>
+          <td width="95"><a href="javascript:yourChoice('E')"><img src="blanco-3raya.jpg" width="95" border=0 height="95" name=E alt="Middle-Center"></a></td>
+          <td width="95"><a href="javascript:yourChoice('F')"><img src="blanco-3raya.jpg" width="95" border=0 height="95" name=F alt="Middle-Right"></a></td>
+        </tr>
+        <tr bgcolor="#FFFFFF"> 
+          <td width="95" height="95"><a href="javascript:yourChoice('G')"><img src="blanco-3raya.jpg"  border=0width="95" height="95" name=G alt="Bottom-Left"></a></td>
+          <td width="95"><a href="javascript:yourChoice('H')"><img src="blanco-3raya.jpg" width="95"  border=0 height="95" name=H alt="Bottom-Center"></a></td>
+          <td width="95"><a href="javascript:yourChoice('I')"><img src="blanco-3raya.jpg" width="95"  border=0 height="95" name=I alt="Bottom-Right"></a></td>
+        </tr>
+      </table>
+    </td>
+    <td width="11">&nbsp;</td>
+    <td width="265" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td> 
+            <div align="right"><img src="logo-3raya.jpg" width="169" height="55"></div>
+          </td>
+        </tr>
+        <tr> 
+            <td class="titular"><b>INSTRUCCIONES:</b></td>
+        </tr>
+        <tr> 
+          <td class="titular"><br>
+            <b>Bienvenidos a 3 en Raya</b></td>
+        </tr>
+        <tr> 
+          <td class="titular"> 
+            <div align="justify"> <br>
+                Juegas como <b>X</b> y el Ordenador como <b>O</b>. Selecciona 
+                la casilla donde quieres poner tu X y realiza un clic con el rat&oacute;n. 
+                S&oacute;lo puedes elegir las casillas que est&eacute;n libres. 
+                El primer jugador que rellene 3 casillas en l&iacute;nea gana. 
+                Buena Suerte</div>
+          </td>
+        </tr>
+        <tr> 
+          <td class="titular"><br>
+            <b>Partidas Realizadas:</b></td>
+        </tr>
+        <tr> 
+          <td class="puntuacion" align="center" height="35"> Tu: 
+            <input type="text" name="you" maxlength="2" size="1" class="inputtex">
+            &nbsp;Ordenador:<input type="text" name="computer" maxlength="2" size="1" class="inputtex">
+            &nbsp;Empates:<input type="text" name="ties" maxlength="2" size="1" class="inputtex">
+          </td>
+        </tr>
+        <tr> 
+          <td> 
+            <div align="center"> 
+              <input type=button value="Jugar" onClick="playAgain();">
+              </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table></form>
+</body>
+</html>
